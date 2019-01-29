@@ -1,0 +1,78 @@
+<!/imagestype html public "-/w3c/dtd html 4.0 transitional/en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-1">
+   <meta name="CHANGEDBY" content="Thomas Dilts">
+</head>
+<body>
+&nbsp;
+<br>
+<hr>
+
+<p STYLE="margin-bottom: 0in">[ <a href="index.en.html">Contents</a> ]
+[ <a href="copyright.en.html">Copyright Notice</a> ]
+<br>
+<hr>
+<br><font size=+4>Technical specification</font>
+<p>1.&nbsp; Written in JAVA version 1.4 
+<br>2.&nbsp; Database is McKoi.
+<br>3.&nbsp; All fields have been tested for 100% unicode compatibility.&nbsp;
+This program will run any language in the world.
+<br>4.&nbsp; The following tables with there SQL definitions are used:
+<P>
+<br>create table Activity 
+<br>(CompId INTEGER NOT NULL, 
+<br>Act_id INTEGER NOT NULL, 
+<br>RegDate DATE, 
+<br>InvDate DATE, 
+<br>Notes VARCHAR(200), 
+<br>FileInfo VARCHAR(200), 
+<br>PRIMARY KEY(Act_id,CompId))",
+</P><P>create table Amount 
+<br>(CompId INTEGER NOT NULL, 
+<br>Act_id INTEGER NOT NULL, 
+<br>Account INTEGER NOT NULL, 
+<br>Amount DOUBLE, 
+<br>IsDebit INTEGER, 
+<br>Customer INTEGER, 
+<br>Notes VARCHAR(40)) " ,
+</P><P>create table Account 
+<br>(CompId int NOT NULL, 
+<br>Account int NOT NULL, 
+<br>AccDesc VARCHAR(255), 
+<br>IsAsset int, 
+<br>PRIMARY KEY(Account,CompId))",
+</P><P>create table Customer 
+<br>(CompId int NOT NULL, 
+<br>CustId int NOT NULL, 
+<br>CustName VARCHAR(100), 
+<br>CustDesc VARCHAR(200), 
+<br>PRIMARY KEY (CustId,CompId))",
+</P><P>create table UniqNum  
+<br>(CompId int NOT NULL, 
+<br>UniqName varchar(50) NOT NULL, 
+<br>LastNumber int, 
+<br>PRIMARY KEY (UniqName,CompId))",
+</P><P>create table AccountingPeriods  
+<br>(CompId int NOT NULL, 
+<br>StartPeriod date NOT NULL, 
+<br>EndPeriod date NOT NULL, 
+<br>PRIMARY KEY (CompId,StartPeriod,EndPeriod))",
+</P><P>create table Company 
+<br>(CompId int NOT NULL, 
+<br>Name VARCHAR(200), 
+<br>PRIMARY KEY (CompId))"};
+</P>
+
+</P>
+<P ALIGN=CENTER><IMG SRC="../images/lazy8color.jpg"><BR></P>
+<P ALIGN=CENTER><A HREF="mailto:support@lazy8.nu?subject=Lazy8 Ledger">Lazy
+Eight Data HB email : support@lazy8.nu </A></P>
+<P ALIGN=CENTER><A HREF="http://www.lazy8.nu">http://www.lazy8.nu</A></P>
+<P ALIGN=CENTER><IMG SRC="../images/ceterus.gif"><BR></P>
+<P ALIGN=CENTER><A HREF="mailto:info@ceterus.nu?subject=Lazy8 Ledger">
+Ceterus Ekonomi AB email : info@ceterus.nu </A></P>
+<P ALIGN=CENTER><A HREF="http://www.ceterus.nu/">http://www.ceterus.nu</A></P>
+</BODY>
+</HTML>

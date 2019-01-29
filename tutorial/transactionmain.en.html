@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!-- saved from url=(0067)intro/index.html -->
+<HTML>
+<HEAD>
+	<TITLE>The Lazy8 Ledger Tutorial</TITLE>
+	<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+	
+	<META content="MSHTML 5.00.3315.2870" name=GENERATOR>
+</HEAD>
+<BODY bgColor=#ffffff link=#000099><B><FONT size=-1>The Lazy8 Ledger Tutorial</FONT></B> <BR>
+<TABLE width=550>
+  
+  <TR>
+    <TD align=left vAlign=center><A 
+      href="navigation.en.html" 
+      ><IMG align=center alt="Previous Page" border=0 src="images/PreviousArrow.gif" ></A> 
+      <A href="tutorialmain.en.html" 
+      ><IMG align=center alt="Lesson Contents" border=0 
+      src="images/TOCIcon.en.gif" ></A> <A 
+      href="reports.en.html" 
+      ><IMG align=center alt="Next Page" border=0 
+      src="images/NextArrow.gif" ></A></TD>
+      </TR>
+
+</TABLE>
+<IMG align=bottom height=8 src="images/blueline.gif" width=550 NATURALSIZEFLAG="3">
+<!-------------------------------End of header--------------------------------------------->
+<H2>Lesson: The transaction entry form </H2>
+<BLOCKQUOTE>
+Here is where you will be spending most of your time with data entry.  
+I will describe first the quick way to enter a record.  Then I will go through 
+each field and what to enter there. 
+<br><br><br>
+<IMG src="images/transaction.en.gif">
+  <UL>
+    <LI><h2>The quick entry </h2>
+<br>There is a good chance that when you first come to this screen, that the columns are
+not all visible.  Some of the columns have been moved off the screen to the right.  In
+order to see all the columns you need to reduce the size of some of the columns.  To
+expand or reduce the size of a column, put the cursor between any two of the column headers.  You
+will see the cursor change form.  Hold down the left mouse button and drag the header to
+either expand or contract the column. When you have all the columns showing as in the 
+picture above, then continue.
+<br><br>1.  Put the cursor at in the InvDate (Inoice date) field.  After this point you dont need to
+use the mouse again.
+<br><br>2.  Enter the date, if you enter the date in the wrong format, you will be told so.
+ Hit ENTER on your keyboard
+<br><br>3.  Now you are in the 'Commentary' field. Enter any comments you want to be attached to this transaction.
+ Hit ENTER on your keyboard
+<br><br>4.  Now you are in the first Account number field.  
+Enter one of your account numbers and hit ENTER on your keyboard
+<br><br>5.  Now you are in the Debit field.  Enter a debit amount or hit tab on your keyboard to enter a
+credit amount.  Hit ENTER on your keyboard.
+<br><br>6.  Now you are once again in the Account number field.  
+Enter one of your account numbers and hit ENTER on your keyboard
+<br><br>7.  Now you are in the Debit field.  At this point, you can enter a number or just
+hit ENTER on your keyboard.  If you hit enter, the balancing number will be entered into
+either the debit or credit field to balance the transaction.
+<br><br>8.  Now you are once again in the Account number field.  
+If at this point your transaction is balanced, you may hit enter once again.  The focus
+of the input will be shifted to the 'Add' button at the bottom of the screen. Finally
+hit enter once more and the record will be entered.  You will get a confirmation dialog
+saying the record is entered.  Hit enter again and you will come to the point 1 at
+the invoice date field.
+<br><br>9.  Continue back at number 1 to enter another record
+<br>
+</LI>
+    <LI><h2>Each Field described </h2>
+<br>I skipped a large number of fields in the quick entry description.  These fields are
+optional but can enhance your data by entering information there if you need it.   
+<h3><a name="company"></a>Company</h3>
+Normally, you choose the company you want to work with when you first start
+Lazy8 Ledger.  That company you chose is shown here.    
+To change this company, you must restart Lazy8 Ledger.
+<h3><a name="period"></a>Period</h3>
+The invoice date must fall between these two periods, otherwise this form will
+not accept the given date.  To change this date you must restart Lazy8 Ledger.
+<h3><a name="RegDate"></a>
+Registration date</h3>
+This is the todays date, that is, the date you enter data.&nbsp; This field
+is disabled because it will be entered automatically and you are not allowed
+to edit it.
+<h3><a name="InvDate"></a>
+Invoice date</h3>
+This date is the date on the invoice you will be entering data on.&nbsp;
+This date you must enter, otherwise the program will assign todays date
+to this field.&nbsp; You must enter the date in the proper format or else
+leave it blank.
+<h3><a name="Commentary"></a>
+Commentary</h3>
+This is important extra information that you must enter.&nbsp; This field
+shows up in most reports.&nbsp; This is a description of what the invoice
+is about, what you bought or what you sold or any other relevant data
+<h3><a name="FileInfo"></a>
+Fileing information</h3>
+This field shows up in very few reports and is used to enter mainly, the
+invoice number and perhaps where you will be storing the invoice if that
+is relevant infomation.
+<h3><a name="Customer"></a>
+Customer</h3>
+This field is entirely optional.&nbsp; It is used in the case you have
+invoices that you want linked to a specific customer or project so you can easily
+gather statistics on how much business you do with that customer.&nbsp;&nbsp;
+If the customer you want to enter is not here, then go to DataEntry->customer
+and enter the accounts first
+<h3><a name="ActId"></a>
+Transaction number</h3>
+This number you cannot enter yourself, this a counter which is always increasing.&nbsp;
+You must write this number on the invoice you are entering information
+about.&nbsp; This field is disabled because it will be entered automatically
+and you are not allowed to edit it.
+<h3><a name="Account"></a>
+Account</h3>
+Choose here the account you will be debiting or crediting. If you enter an account number
+here that does not exist, then you will be shown the list of accounts in the next column.  You
+can find the account you want in the list and select it.  If the account you
+want to enter is not here, then go to DataEntry->Account
+and enter the accounts first. 
+<h3><a name="DebitAccountTotal"></a>
+Debit account Total</h3>
+Here you enter the total of the debit for the given account.
+<h3><a name="DebitAccountGrandTotal"></a>
+Debit account grand total</h3>
+This field is automatically updated to show you what the total of all your
+debits are.&nbsp; This field must equal the corresponding field in the
+credit column otherwise the program will not accept your entry.
+<h3><a name="CreditAccountTotal"></a>
+Credit account total</h3>
+Here you enter the total of the credit for the given account. 
+<h3><a name="CreditAccountGrandTotal"></a>
+Credit account grand total</h3>
+This field is automatically updated to show you what the total of all your
+credits are.&nbsp; This field must equal the corresponding field in the
+debit column otherwise the program will not accept your entry.
+
+</LI>
+  </UL>
+</BLOCKQUOTE>
+    
+<!-------------------------------beginning of footer--------------------------------------------->    
+<IMG align=bottom height=8 src="images/blueline.gif" 
+width=550 NATURALSIZEFLAG="3"> <BR>
+<TABLE width=550>
+  
+  <TR>
+    <TD align=left vAlign=center>
+      <A href="navigation.en.html" 
+      ><IMG align=center alt="Previous Page" border=0 src="images/PreviousArrow.gif" ></A> 
+      <A href="tutorialmain.en.html" 
+      ><IMG align=center alt="Lesson Contents" border=0 
+      src="images/TOCIcon.en.gif" ></A> 
+      <A href="reports.en.html" 
+      ><IMG align=center alt="Next Page" border=0 
+      src="images/NextArrow.gif" ></A>
+     </TD>
+  </TR>
+
+</TABLE>
+<P><FONT size=-1><A 
+href="../doc/copyright.en.html">Copyright</A> 
+2002 Lazy Eight Data HB </FONT></P>
+</BODY>
+</HTML>

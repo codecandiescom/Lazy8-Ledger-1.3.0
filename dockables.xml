@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE DOCKABLES SYSTEM "dockables.dtd">
+
+<DOCKABLES>
+	<DOCKABLE NAME="lazy8ledger-account">
+		new org.lazy8.nu.ledger.forms.AccountForm(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-transaction">
+		new org.lazy8.nu.ledger.forms.TransactionTableForm(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-company">
+		new org.lazy8.nu.ledger.forms.CompanyForm(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-accountingperiods">
+		new org.lazy8.nu.ledger.forms.PeriodForm(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-customer">
+		new org.lazy8.nu.ledger.forms.CustomerForm(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-transactionreport">
+		new org.lazy8.nu.ledger.reports.TransactionReport(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-balanceresult">
+		new org.lazy8.nu.ledger.reports.BalanceReport(view,"BalanceResult","lazy8ledger-balanceresult");
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-accountsummary">
+		new org.lazy8.nu.ledger.reports.AccountReport(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-moms">
+		new org.lazy8.nu.ledger.reports.AccountSumReport(view,"VAT","lazy8ledger-moms");
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-sqlreport">
+		new org.lazy8.nu.ledger.reports.SQLReport(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-language">
+		  new org.lazy8.nu.ledger.forms.TranslatorPane(view);
+	</DOCKABLE>
+	<DOCKABLE NAME="lazy8ledger-specialreport">
+		  new org.lazy8.nu.ledger.reports.AccountSumReport(view);
+	</DOCKABLE>
+</DOCKABLES>

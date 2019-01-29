@@ -1,0 +1,8 @@
+COMPILING LAZY8LEDGER FROM SOURCE
+
+To compile lazy8ledger, you will need:
+
+- Jakarta Ant. I use version 1.4; older versions might or might not
+  work. Get it from <http://jakarta.apache.org>.
+- jedit.jar and InfoViewer.jar in the ../../ directory
+- This must be compiled with java 1.4 however, it can be run in java 1.3

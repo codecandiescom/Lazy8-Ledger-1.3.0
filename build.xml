@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<!--
+
+    Ant build file for the Lazy8Ledger plugin for jEdit
+
+    Please note that jedit.jar must be in the system classpath.
+
+-->
+
+
+<project name="Lazy8Ledger" default="dist" basedir=".">
+
+	<property name="jar.name"  value="${ant.project.name}.jar"/>
+
+	<property name="src.dir" value="."/>
+	<property name="build.dir" value="build"/>
+	<property name="install.dir" value=".."/>
+
+	<property name="jedit.install.dir" value="../.."/>
+
+	<path id="project.class.path">
+		<pathelement location="${jedit.install.dir}/jedit.jar"/>
+	</path>
+	<path id="infoviewer.class.path">
+		<pathelement location="${jedit.install.dir}/infoviewer.jar"/>
+	</path>
+
+
+	<target name="init">
+		<mkdir dir="${build.dir}"/>
+	</target>
+
+
+      <!-- add     debug="yes"  after includeJavaRuntime if you want debugging -->
+	<target name="compile" depends="init">
+		<javac
+			srcdir="${src.dir}"
+			destdir="${build.dir}"
+			deprecation="on"
+			includeJavaRuntime="yes"
+		>
+			<classpath refid="project.class.path"/>
+			<classpath refid="infoviewer.class.path"/>
+		</javac>
+	</target>
+
+
+	<target name="dist" depends="compile">
+		<mkdir dir="${install.dir}"/>
+		<jar jarfile="${install.dir}/${jar.name}">
+			<fileset dir="${build.dir}"/>
+			<fileset dir="${src.dir}">
+				<include name="actions.xml"/>
+				<include name="dockables.xml"/>
+				<include name="**/*.props"/>
+				<include name="**/*.html"/>
+				<include name="**/*.htm"/>
+				<include name="**/*.gif"/>
+				<include name="**/*.jpg"/>
+				<include name="**/*.txt"/>
+				<include name="**/*.bin"/>
+				<include name="**/*.conf"/>
+			</fileset>
+		</jar>
+	</target>
+
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete>
+			<fileset dir="." includes="**/*~" defaultexcludes="no"/>
+		</delete>
+	</target>
+
+</project>

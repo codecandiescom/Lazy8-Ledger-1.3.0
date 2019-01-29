@@ -1,0 +1,120 @@
+
+
+PARSER_BEGIN(MDQL)
+
+package com.mckoi.database.parser;
+
+public class MDQL {
+
+  public static void main(String args[]) throws ParseException {
+    MDQL parser = new MDQL(System.in);
+    parser.CompileUnit();
+  }
+
+}
+
+PARSER_END(MDQL)
+
+
+SKIP : {
+
+  " "
+| "\t"
+| "\n"
+| "\r"
+|  <"//" (~["\n","\r"])* ("\n" | "\r" | "\r\n")>
+|  <"/*" (~["*"])* "*" ("*" | ~["*","/"] (~["*"])* "*")* "/">
+
+}
+
+
+TOKEN : {
+
+  <NUMBER_LITERAL:
+      (["0"-"9"])+ "." (["0"-"9"])*
+    | "." (["0"-"9"])+
+    | (["0"-"9"])+
+  >
+|
+  <STRING_LITERAL: "\"" (~["\"","\n","\r"])* "\"">
+
+}
+
+
+TOKEN: { /* KEYWORDS */
+
+  <WHERE: "where">
+| <MATCH: "match">
+| <GROUP: "group">
+| <SELECT: "select">
+| <JOIN: "join">
+| <UNION: "union">
+| <IN: "in">
+| <NOT_IN: "not_in">
+| <AGGREGATE: "aggregate">
+| <CREATE: "create">
+| <DROP: "drop">
+| <INSERT: "insert">
+| <DELETE: "delete">
+| <XMAX: "xmax">
+
+}
+
+
+TOKEN : {  /* IDENTIFIERS */
+
+  <IDENTIFIER: <LETTER> ( <LETTER> | <DIGIT> )* >
+| <PARAMETER_REF: "%" ( <DIGIT> )+ >
+| <#LETTER: ["a"-"z", "A"-"Z", "_", "$"] >
+| <#DIGIT: ["0"-"9"]>
+
+}
+
+
+void CompileUnit() :
+{}
+{
+    CompileTable()
+  | CompileFunction()
+}
+
+void CompileTable() :
+{}
+{
+  <IDENTIFIER>
+}
+
+void CompileFunction() :
+{}
+{
+  "("
+  ( SelectFun() | JoinFun() | UnionFun() )
+  ")"
+}
+
+void Condition() :
+{}
+{
+  <STRING_LITERAL>
+  "=="
+  ( <STRING_LITERAL> | <IDENTIFIER> | <PARAMETER_REF> )
+}
+
+void SelectFun() :
+{}
+{
+  <SELECT> CompileUnit() <WHERE> Condition()
+}
+
+void JoinFun() :
+{}
+{
+  <JOIN> CompileUnit() CompileUnit() <WHERE> Condition()
+}
+
+void UnionFun() :
+{}
+{
+  <UNION> CompileUnit() CompileUnit()
+}
+

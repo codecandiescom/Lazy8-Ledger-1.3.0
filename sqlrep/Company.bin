@@ -1,0 +1,3 @@
+#Version 1.0
+#Fri Sep 22 15:00:09 GMT+01:00 2000
+SQLstatement=SELECT * FROM Company ORDER BY CompId

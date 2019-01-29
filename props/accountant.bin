@@ -1,0 +1,55 @@
+### :tabSize=8:indentSize=8:noTabs=false:
+### :folding=explicit:collapseFolds=1:
+#jEdit properties
+#Sun Apr 21 13:44:52 CEST 2002
+view.mbar=lazy8ledger-dataentry lazy8ledger-report lazy8ledger-advanced lazy8ledger-file2 lazy8ledger-edit2 lazy8ledger-search2 lazy8ledger-utils2 plugins lazy8ledger-help-menu
+tip.show=false
+
+#{{{ File menu
+lazy8ledger-file2=new-file \
+     open-file \
+     %recent-files \
+     - \
+     close-buffer \
+     close-all \
+     - \
+     save \
+     save-as \
+     save-all \
+     - \
+     lazy8ledger-print \
+     lazy8ledger-page-setup \
+     lazy8ledger-print-preview
+#}}}
+
+#{{{ Edit menu
+lazy8ledger-edit2=undo \
+     redo \
+     - \
+     cut \
+     copy \
+     paste \
+     - \
+     select-all 
+#}}}
+
+#{{{ search menu
+lazy8ledger-search2=find \
+       find-next \
+       find-prev
+#}}}
+
+#{{{ utils menu
+lazy8ledger-utils2=lazy8ledger-options - global-options buffer-options
+#}}}
+
+#{{{ help menu
+lazy8ledger-help-menu=about \
+     help \
+     tip-of-the-day \
+     - \
+     lazy8ledger-help \
+     lazy8ledger-tutorial \
+     lazy8ledger-about
+#}}}
+

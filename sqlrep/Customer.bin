@@ -1,0 +1,3 @@
+#Version 1.0
+#Sun Mar 10 01:00:57 CET 2002
+SQLstatement=SELECT * FROM Customer ORDER BY CompId,CustId

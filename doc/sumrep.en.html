@@ -1,0 +1,188 @@
+<!/imagestype html public "-/w3c/dtd html 4.0 transitional/en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-1">
+   <meta name="CHANGEDBY" content="Thomas Dilts">
+</head>
+<body>
+<div STYLE="margin-bottom: 0in"></div>&nbsp;
+
+<br>
+<hr>
+
+<p STYLE="margin-bottom: 0in">[ <a href="index.en.html">Contents</a> ]
+[ <a href="copyright.en.html">Copyright Notice</a> ]
+<br>
+<hr>
+<h1>
+<font size=+4>Special report</font></h1>
+This report will allow you to make reports very similar to what is requried
+for all kinds of Tax returns and what ever government forms you could find.
+It is based on the idea that you will have several different groups of
+accounts that will be summarized individually and then later summarized
+as a whole (or perhaps partially in yet again sub groups.).
+<h1>
+Account display and grouping</h1>
+This group is where you enter the first level of summarizing of accounts.&nbsp;
+And, if wanted, you can show accounts without gouping them together with
+other accounts.
+<h3>
+Account from</h3>
+Here you choose the first level account you want to show on your report.&nbsp;
+You may enter the same account many times in this column if it is needed
+in your report.  This is the beginning (inclusive) account number.  If you want to specify only one
+account then "Account from" will be equal to "Account to".
+<h3>
+Account to</h3>
+Here you choose the first level account you want to show on your report.&nbsp;
+You may enter the same account many times in this column if it is needed
+in your report. This is the end (inclusive) account number.  If you want to specify only one
+account then "Account from" will be equal to "Account to".
+<h3>
+Commentary</h3>
+This is a line of commentary that will appear on the report beside this
+given groups total.&nbsp; Note that for several accounts in the same group,
+only the commentary from the first account in the group will be used.&nbsp;
+The others will be ignored.
+<h3>
+Minus</h3>
+If this account is to be subtracted from the total then mark this box
+<h3>
+First level group</h3>
+Here is where you specify which accounts will be summarized together by
+simply giving any code you like in this column.&nbsp; The code must be
+the same for all the accounts which will be summarized together in that
+group.&nbsp; If this column is blank, then this account will not be in
+any group and it will be shown on its own in the report.&nbsp; Note that
+all members of a group must be together consecutively in this list, otherwise
+the results will be very strange.
+<h3><a name="AddRow"></a>
+Account display and grouping - Add row</h3>
+If you need another empty row to enter an account in, mark the row that
+you want the empty line to appear at and press this button.&nbsp; If no
+line is marked, a new row will appear at the bottom.
+<h3><a name="DeleteRow"></a>
+Account display and grouping - Delete row</h3>
+Mark the row with the cursor that you want to delete and then press this
+button.
+<h1>
+Second level group</h1>
+In this area is where you enter the information about which groups you
+made in the previously mentioned Account display and grouping will be yet
+again grouped together to form a secondary summary.
+<h3>
+First level group</h3>
+Here you will be allowed to enter group codes that you have previously
+entered in the previously mentioned First level group.&nbsp; But, each
+group may only be allowed to be entered just once and as you enter groups
+in this column, you will notice that your choices of possible groups will
+diminish automatically from the drop down list boxes.
+<h3>
+Commentary</h3>
+This is a line of commentary that will appear on the report beside this
+given groups total.&nbsp; Note that for several first level groups&nbsp;
+in the same second level group, only the commentary from the first first
+level group will be used.&nbsp; The others will be ignored.
+<h3>
+Incomming</h3>
+If you need an extra column for the sum of transactions before the given
+dates, then this column should be marked.  This is useful only for accounts
+that are Assets.
+<h3>
+Minus</h3>
+If this group is to be subtracted from the second level total then mark
+this box.
+<h3>
+Second level group</h3>
+Here is where you specify which first level groups will be summarized together
+by simply giving any code you like in this column.&nbsp; The code must
+be the same for all the first level groups which will be summarized together
+in that second level group.&nbsp; If this column is blank, then this group
+will not be in any second level group and it will be shown on its own in
+the report.
+<h3><a name="AddRowSecondary"></a>
+Second level group - Add row</h3>
+If you need another empty row to enter an group in, mark the row that you
+want the empty line to appear at and press this button.&nbsp; If no line
+is marked, a new row will appear at the bottom.
+<h3><a name="DeleteRowSecondary"></a>
+Second level group - Delete row</h3>
+Mark the row with the cursor that you want to delete and then press this
+button.
+<h1><a name="company"></a>
+Company</h1>
+This report will only do one company at a time.&nbsp; So, you must choose
+the company to printout on here.&nbsp; If you have only one company and
+have choosen to not be able to change the company (see Options-><a href="setup.en.html">SETUP</a>)
+then this will be disabled and you dont need to do anything here.
+<h1><a name="period"></a>
+Period</h1>
+The period is two dates that are the suggested start and end dates for this report.
+ You may however, overide these dates by changing the two fields below.
+<h1><a name="StartDate"></a>
+Start date</h1>
+This report will print all transaction in the accounts between the given start
+and stop date where the start and stop date will be applied to the Invoice
+date field you entered in DataEntry-><a href="transaction.en.html">Transaction</a>.&nbsp;
+There must exist records bettween these two dates, otherwise there will
+be no report.
+<h1><a name="StopDate"></a>
+Stop date</h1>
+This report will print all transaction in the accounts between the given start
+and stop date where the start and stop date will be applied to the Invoice
+date field you entered in DataEntry-><a href="transaction.en.html">Transaction</a>.&nbsp;
+There must exist records bettween these two dates, otherwise there will
+be no report.
+<h1><a name="ReportTitle"></a>
+Report title</h1>
+This is the title of the report that will only appear at the top of the
+report.&nbsp; This could be blank if you wish
+<h1><a name="Reports"></a>
+Report file name</h1>
+This is the file name of the report that you have saved or that has been saved.
+<h1><a name="Save"></a>
+Save button</h1>
+After you have entered your report definition.&nbsp; You can press this
+button to save it and the name will be the same as what is showing in the
+REPORT field named above.&nbsp; You may want to use the Save as button
+described below instead.
+<h1><a name="SaveAs"></a>
+Save as button</h1>
+When you have written a new report definition, then you can press here
+and then you will be asked to give a name for the report which will later
+show up in the REPORT field described above.
+<h1><a name="Delete"></a>
+Delete button</h1>
+Be very careful here, this will delete the report showing in the REPORT
+field described above.
+<h1><a name="Clear"></a>
+Clear button</h1>
+This will clear&nbsp; most everything described above.
+<h1><a name="GetReport"></a>
+Get report Button</h1>
+Press this button when all the previous fields are entered.&nbsp; The report
+will appear in a seperate word processing window
+<h1><a name="GetReportOntoClipboard"></a>
+Get report into clipboard Button</h1>
+Press this button when all the previous fields are entered.&nbsp; The report
+will be directly put onto the clipboard.  You must then paste the report
+into some other wordprocessor or spreadsheet.  If you paste into a wordprocessor,
+then you will attain the best results if after you have pasted into the
+wordprocessor, that you select the entire report and then select -convert
+to table- in the wordprocessing program</a>
+<h1><a name="Exit"></a>Exit</h1>
+Exit this screen
+<h1><a name="Help"></a>Help</h1>
+Show a full size help screen about this report producing form.
+</P>
+<P ALIGN=CENTER><IMG SRC="../images/lazy8color.jpg"><BR></P>
+<P ALIGN=CENTER><A HREF="mailto:support@lazy8.nu?subject=Lazy8 Ledger">Lazy
+Eight Data HB email : support@lazy8.nu </A></P>
+<P ALIGN=CENTER><A HREF="http://www.lazy8.nu">http://www.lazy8.nu</A></P>
+<P ALIGN=CENTER><IMG SRC="../images/ceterus.gif"><BR></P>
+<P ALIGN=CENTER><A HREF="mailto:info@ceterus.nu?subject=Lazy8 Ledger">
+Ceterus Ekonomi AB email : info@ceterus.nu </A></P>
+<P ALIGN=CENTER><A HREF="http://www.ceterus.nu/">http://www.ceterus.nu</A></P>
+</BODY>
+</HTML>

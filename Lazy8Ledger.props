@@ -1,0 +1,81 @@
+# Plugin properties
+plugin.lazy8ledger.Lazy8LedgerPlugin.name=Lazy8Ledger
+plugin.lazy8ledger.Lazy8LedgerPlugin.author=Thomas Dilts
+plugin.lazy8ledger.Lazy8LedgerPlugin.version=1.30
+plugin.lazy8ledger.Lazy8LedgerPlugin.docs=doc/index.html
+plugin.lazy8ledger.Lazy8LedgerPlugin.depend.0=jedit 04.00.08.00
+plugin.lazy8ledger.Lazy8LedgerPlugin.depend.1=plugin infoviewer.InfoViewerPlugin 1.1
+plugin.lazy8ledger.Lazy8LedgerPlugin.depend.2=jdk 1.3
+plugin.lazy8ledger.Lazy8LedgerPlugin.depend.3=plugin buffertabs.BufferTabsPlugin 0.7.6
+
+# Plugin menu properties
+#{{{ Jar file resource files
+lazy8ledger.jarfiles.sqlrep=Account.bin Company.bin Customer.bin
+lazy8ledger.jarfiles.spcrep=BalanceResult.en.bin BalanceResult.sv.bin VAT.en.bin VAT.sv.bin
+lazy8ledger.jarfiles.lang=sv.bin en.bin
+lazy8ledger.jarfiles.props=setup.bin
+lazy8ledger.jarfiles.testdata=AccountPlan.en.bin AccountPlan.sv.bin
+#}}}
+
+
+# Plugin menu properties
+#{{{ Menu bar
+
+#{{{ Ledger menu
+lazy8ledger-menu=%lazy8ledger-dataentry \
+     %lazy8ledger-report \
+     %lazy8ledger-printing \
+     %lazy8ledger-advanced \
+     - \
+     lazy8ledger-options \
+     - \
+     lazy8ledger-help \
+     lazy8ledger-tutorial \
+     lazy8ledger-about
+
+#{{{ dataentry menu
+lazy8ledger-dataentry=lazy8ledger-transaction lazy8ledger-account lazy8ledger-customer lazy8ledger-company lazy8ledger-accountingperiods - exit
+
+#}}}
+#{{{ report menu
+lazy8ledger-report=lazy8ledger-accountsummary lazy8ledger-transactionreport lazy8ledger-balanceresult lazy8ledger-moms
+#}}}
+
+#{{{ printing menu
+lazy8ledger-printing=lazy8ledger-page-setup lazy8ledger-print-preview lazy8ledger-print
+#}}}
+
+#{{{ advanced menu
+lazy8ledger-advanced=lazy8ledger-createnewcompany %lazy8ledger-reportadvanced lazy8ledger-databaseconnect lazy8ledger-language %lazy8ledger-backuprestore
+#}}}
+#{{{ reportadvanced menu
+lazy8ledger-reportadvanced=lazy8ledger-specialreport lazy8ledger-sqlreport
+#}}}
+#{{{ backuprestore menu
+lazy8ledger-backuprestore=lazy8ledger-backupdatabase lazy8ledger-restoredatabase - lazy8ledger-backupcompany lazy8ledger-restorecompany
+#}}}
+#}}}
+
+
+# This text scrolls by in the about dialog box.
+# Hack: Since StringTokenizer treats two consequent \n as one token, we
+# insert a space by itself in the text to create blank lines.
+lazy8ledger.about.text=Lazy 8 Ledger is brought to you by:\n\
+	\ \n\
+	Thomas Dilts\n\
+	Bo Carlson\n\
+	Ingrid Carlson\n\
+	Karin Dilts Lindblom\n\
+	Lazy Eight Data HB\n\
+	http://www.lazy8.nu\n\
+	Lästringe Bokföring\n\
+	Ceterus Ekonomi AB\n\
+	http://www.ceterus.nu\n\
+	McKoi database\n\
+	http://mckoi.com/database\n\
+	\ \n\
+	I'd also like to thank all the users for their\n\
+	comments, feedback and bug reports.
+#}}}
+
+

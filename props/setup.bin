@@ -1,0 +1,22 @@
+#Version 1.0
+#Wed Mar 13 17:43:00 CET 2002
+INSTALLDEFAULT_1-report\ number\ format=1
+INSTALLDEFAULT_TRUE-warning\ clear\ after\ add=true
+INSTALLDEFAULT_TRUE-warning\ after\ delete=true
+INSTALLDEFAULT_TRUE-warning\ before\ delete=true
+INSTALLDEFAULT_com.mckoi.JDBCDriver-connect\ driver=com.mckoi.JDBCDriver
+INSTALLDEFAULT_false-dataentry\ number\ justify\ left\ =false
+INSTALLDEFAULT_TRUE-warning\ clear\ after\ delete=true
+INSTALLDEFAULT_true-dataentry\ number\ special\ format=true
+INSTALLDEFAULT_4-fast\ entry\ number\ of\ digits=4
+INSTALLDEFAULT_blank database=
+INSTALLDEFAULT_false-show\ advanced\ menus=false
+INSTALLDEFAULT_1-dataentry\ number\ format=1
+INSTALLDEFAULT_metal-window\ style=metal
+INSTALLDEFAULT_false-report\ number\ justify\ left\ =false
+INSTALLDEFAULT_TRUE-warning\ good\ add=true
+INSTALLDEFAULT_FALSE-require\ login=false
+INSTALLDEFAULT_true\ show\ context\ help=true
+INSTALLDEFAULT_true\ warn\ to\ do\ backup=true
+INSTALLDEFAULT_false\ require\ backup\ password=false
+INSTALLDEFAULT_false\ is\ install\ routine\ run=false

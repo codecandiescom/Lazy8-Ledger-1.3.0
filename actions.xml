@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ACTIONS SYSTEM "actions.dtd">
+<!-- :tabSize=8:indentSize=8:noTabs=false:                                   -->
+<!-- :folding=indent:collapseFolds=1:                                        -->
+
+<ACTIONS>
+
+	<ACTION NAME="lazy8ledger-account">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.AccountForm(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-transaction">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.TransactionTableForm(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-company">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.CompanyForm(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-accountingperiods">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.PeriodForm(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-customer">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.CustomerForm(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-transactionreport">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.TransactionReport(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-balanceresult">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.BalanceReport(view,"BalanceResult","lazy8ledger-balanceresult");
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-accountsummary">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.AccountReport(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-moms">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.AccountSumReport(view,"VAT","lazy8ledger-moms");
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-sqlreport">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.SQLReport(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-specialreport">
+		<CODE>
+		  new org.lazy8.nu.ledger.reports.AccountSumReport(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-about">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.AboutDialog(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-help">
+		<CODE>
+		  infoviewer.InfoViewerPlugin.openURL(view, "jeditresource:/Lazy8Ledger.jar!/doc/index.html");
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-options">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.OptionsDialog(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-backupdatabase">
+		<CODE>
+		  if("1.4".compareTo((String)(System.getProperty("java.version")))>0)
+			  lazy8ledger.Lazy8LedgerPlugin.createBackupFrame1_3(view);
+		  else 
+			  lazy8ledger.Lazy8LedgerPlugin.createBackupFrame(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-restoredatabase">
+		<CODE>
+		  if("1.4".compareTo((String)(System.getProperty("java.version")))>0)
+			  lazy8ledger.Lazy8LedgerPlugin.createRestoreFrame1_3(view);
+		  else 
+			  lazy8ledger.Lazy8LedgerPlugin.createRestoreFrame(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-backupcompany">
+		<CODE>
+		  if("1.4".compareTo((String)(System.getProperty("java.version")))>0)
+			  lazy8ledger.Lazy8LedgerPlugin.createBackupCompanyFrame1_3(view);
+		  else 
+			  lazy8ledger.Lazy8LedgerPlugin.createBackupCompanyFrame(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-restorecompany">
+		<CODE>
+		  if("1.4".compareTo((String)(System.getProperty("java.version")))>0)
+			  lazy8ledger.Lazy8LedgerPlugin.createRestoreCompanyFrame1_3(view);
+		  else 
+			  lazy8ledger.Lazy8LedgerPlugin.createRestoreCompanyFrame(view);
+		</CODE>
+	</ACTION>
+
+
+	<ACTION NAME="lazy8ledger-createnewcompany">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.CreateNewCompany(view,true);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-language">
+		<CODE>
+		  new org.lazy8.nu.ledger.forms.TranslatorPane(view);
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-databaseconnect">
+		<CODE>
+		  org.lazy8.nu.ledger.jdbc.DataConnection.ShowDataConnectDialog(view);
+		</CODE>
+	</ACTION>
+
+	<ACTION NAME="lazy8ledger-print">
+		<CODE>
+			if("1.4".compareTo((String)(System.getProperty("java.version")))>0)org.lazy8.nu.ledger.print.BufferPrinter1_3.print(view,buffer,false); else org.lazy8.nu.ledger.print.BufferPrinter1_4.print(view,buffer,false); 
+		</CODE>
+	</ACTION>
+	
+	<ACTION NAME="lazy8ledger-page-setup">
+		<CODE>
+			if("1.4".compareTo((String)(System.getProperty("java.version")))>0)org.lazy8.nu.ledger.print.BufferPrinter1_3.pageSetup(view); else org.lazy8.nu.ledger.print.BufferPrinter1_4.pageSetup(view);
+		</CODE>
+	</ACTION>
+	
+	<ACTION NAME="lazy8ledger-print-preview">
+		<CODE>
+			if("1.4".compareTo((String)(System.getProperty("java.version")))>0)org.lazy8.nu.ledger.print.BufferPrinter1_3.printPreview(view,buffer,false); else org.lazy8.nu.ledger.print.BufferPrinter1_4.printPreview(view,buffer,false); 	
+		</CODE>
+	</ACTION>
+  
+	<ACTION NAME="lazy8ledger-tutorial">
+		<CODE>
+			org.lazy8.nu.ledger.main.Lazy8Ledger.ShowTutorial(view); 	
+		</CODE>
+	</ACTION>
+</ACTIONS>

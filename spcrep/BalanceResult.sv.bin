@@ -1,0 +1,25 @@
+#Version 1.0
+#Sat Mar 02 11:37:04 CET 2002
+SecondLevelRow0Col2=false
+SecondLevelRow0Col1=Skillnad
+SecondLevelRow0Col0=10
+AccountRows=2
+ReportName=Balance och Resultat
+SecondLevelRows=2
+AccountRow1Col5=11
+AccountRow1Col4=false
+AccountRow1Col3=false
+AccountRow1Col2=Resultat
+AccountRow1Col1=9999
+AccountRow1Col0=3000
+SecondLevelRow1Col3=1
+SecondLevelRow1Col2=false
+SecondLevelRow1Col1=
+SecondLevelRow1Col0=11
+AccountRow0Col5=10
+AccountRow0Col4=false
+AccountRow0Col3=true
+AccountRow0Col2=Balance
+AccountRow0Col1=2999
+AccountRow0Col0=1000
+SecondLevelRow0Col3=1
